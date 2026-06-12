@@ -9,6 +9,18 @@ This is a portfolio POC demonstrating the exact pipeline a "take ARKit LiDAR
 mesh and produce floor plans" job needs: native iOS capture + cross-platform
 geometry processing.
 
+## Demo
+
+Real iOS-Simulator captures of the running app (see [FLOW.md](FLOW.md) for how
+they are generated). The synthetic LiDAR mesh runs through the real generator,
+so the floor plan, wall labels, and stats are live output, not mockups.
+
+| Scan screen | Floor plan | Plan + stats |
+| --- | --- | --- |
+| ![Scan screen](screenshots/01-scan-screen.png) | ![Floor plan](screenshots/02-floor-plan.png) | ![Plan and stats](screenshots/03-plan-stats.png) |
+
+![Demo](screenshots/demo.gif)
+
 ## What it does
 
 1. **Native capture (iOS, Swift/ARKit)** - `ArkitScannerPlugin.swift` runs an
